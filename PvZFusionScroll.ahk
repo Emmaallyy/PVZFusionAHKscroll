@@ -6,6 +6,7 @@ scrollDir := 2
 memorySlot := 0
 
 #HotIf WinActive("PlantsVsZombiesRH")
+
 WheelDown:: 
 {
 	global memorySlot
@@ -59,23 +60,23 @@ WheelUp::
 
 slotCheckMove(Slot) 
 {
-
+	WinGetPos(&winX, &winY, &winWidth, &winHeight, "PlantsVsZombiesRH")
 	switch
 	{ 
-		case Slot = 0: MouseMove 541, 157, 0
-		case Slot = 1: MouseMove 660, 157, 0
-		case Slot = 2: MouseMove 762, 157, 0
-		case Slot = 3: MouseMove 878, 157, 0
-		case Slot = 4: MouseMove 986, 157, 0
-		case Slot = 5: MouseMove 1099, 157, 0
-		case Slot = 6: MouseMove 1202, 157, 0
-		case Slot = 7: MouseMove 1314, 157, 0
-		case Slot = 8: MouseMove 1435, 157, 0
-		case Slot = 9: MouseMove 1534, 157, 0
-		case Slot = 10: MouseMove 1639, 157, 0
-		case Slot = 11: MouseMove 1760, 157, 0
-		case Slot = 12: MouseMove 1864, 157, 0
-		case Slot = 13: MouseMove 1978, 157, 0
+		case Slot = 0: MouseMove 0.21 * winWidth, 0.08 * winHeight, 0
+		case Slot = 1: MouseMove 0.255 * winWidth, 0.08 * winHeight, 0
+		case Slot = 2: MouseMove 0.3 * winWidth, 0.08 * winHeight, 0
+		case Slot = 3: MouseMove 0.34 * winWidth, 0.08 * winHeight, 0
+		case Slot = 4: MouseMove 0.38 * winWidth, 0.08 * winHeight, 0
+		case Slot = 5: MouseMove 0.43 * winWidth, 0.08 * winHeight, 0
+		case Slot = 6: MouseMove 0.465 * winWidth, 0.08 * winHeight, 0
+		case Slot = 7: MouseMove 0.51 * winWidth, 0.08 * winHeight, 0
+		case Slot = 8: MouseMove 0.55 * winWidth, 0.08 * winHeight, 0
+		case Slot = 9: MouseMove 0.60 * winWidth, 0.08 * winHeight, 0
+		case Slot = 10: MouseMove 0.64 * winWidth, 0.08 * winHeight, 0
+		case Slot = 11: MouseMove 0.68 * winWidth, 0.08 * winHeight, 0
+		case Slot = 12: MouseMove 0.73 * winWidth, 0.08 * winHeight, 0
+		case Slot = 13: MouseMove 0.77 * winWidth, 0.08 * winHeight, 0
 
 	}
 }
